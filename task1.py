@@ -7,11 +7,27 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-sum_numbers = int(input("Введите сумму двух чисел: "))
-multi_numbers = int(input("Введите произведение двух чисел: "))
-number_1 = 0
-number_2 = 0
-while number_1 * number_2 < multi_numbers:
-    number_1 += 1
-    number_2 = sum_numbers - number_1
-print(number_1, number_2)
+# sum_numbers = int(input("Введите сумму двух чисел: "))
+# multi_numbers = int(input("Введите произведение двух чисел: "))
+# number_1 = 0
+# number_2 = 0
+# while number_1 * number_2 < multi_numbers:
+#     number_1 += 1
+#     number_2 = sum_numbers - number_1
+# print(number_1, number_2)
+
+# Task 12
+
+s = int(input('Введите сумму элементов: '))
+x = int(input('Введите произведение элементов: '))
+
+D = (s ** 2 - 4 * x)
+
+y1 = (s - D ** 0.5) / 2
+y2 = (s + D ** 0.5) / 2
+
+x1 = s - y1
+x2 = s - y2
+
+print(x1, y1)
+print(x2, y2)

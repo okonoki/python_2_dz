@@ -16,7 +16,7 @@ for i in range(number):
         count_heads += 1
     else:
         count_tails += 1
-if count_heads >= count_tails:
+if count_heads > count_tails:
     print(count_tails)
 else:
     print(count_heads)
